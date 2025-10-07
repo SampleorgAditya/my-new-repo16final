@@ -1,0 +1,4 @@
+# Branch-specific ownership
+/dev/* @SampleorgAditya/l1
+/qa/* @SampleorgAditya/l1 @SampleorgAditya/l2
+/main/* @SampleorgAditya/l2
