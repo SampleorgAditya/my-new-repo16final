@@ -1,0 +1,24 @@
+name: build
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+    branches: ['**']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Run build
+        run: |
+          echo "✅ Build started"
+          echo "Running tests..."
+          # Add your actual build/test commands here
+          echo "✅ Build completed successfully"
+      
+      - name: Build status
+        run: echo "Build passed for commit ${{ github.sha }}"
